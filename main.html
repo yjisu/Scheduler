@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스케줄러</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+          <h1 class="logo">title</h1>
+          <div>
+            <ul>
+              <li><a href="#">menu</a></li>
+              <li><a href="#">menu</a></li>
+              <li class="sub">menu
+                <ul>
+                  <li><a href="post.html">sub_menu1</a></li>
+                  <li>sub_menu2</li>
+                  <li>sub_menu3</li>
+                  <li>sub_menu4</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </header>
+        </div>
+        <section>
+            <div class="calendar">
+                <div class="cal_nav">
+                  <button class="go-prev">&lt;</button>
+                  <div class="year-month"></div>
+                  <button class="go-next">&gt;</button>
+                </div>
+                <div class="cal_wrap">
+                  <div class="days">
+                    <div class="day">일</div>
+                    <div class="day">월</div>
+                    <div class="day">화</div>
+                    <div class="day">수</div>
+                    <div class="day">목</div>
+                    <div class="day">금</div>
+                    <div class="day">토</div>
+                  </div>
+                  <div class="dates"></div>
+                </div>
+            </div>
+            <div class="schedule">
+              <table id="schedul_detail">
+                <th colspan="2" id="TodayTodo"></th>
+                <tr>
+                  <td id="checkbox">
+                    <input type="checkbox">
+                  </td>
+                  <td>
+                    <input type="text" name="text">
+                  </td>
+                </tr>
+                <tr>
+                  <td id="checkbox"><input type="checkbox"></td>
+                  <td>
+                    <input type="text" name="text">
+                  </td>
+                </tr>
+                <tr>
+                  <td id="checkbox"><input type="checkbox"></td>
+                  <td>
+                    <input type="text" name="text">
+                  </td>
+                </tr>
+                <tr>
+                  <td id="checkbox"><input type="checkbox"></td>
+                  <td>
+                    <input type="text" name="text">
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" id="memo">
+                    <textarea id="memo_content" placeholder="메모"></textarea>
+                  </td>
+                </tr>
+              </table>
+
+            </div>
+        </section>
+        <section id="searchSection">
+          <div class="search">
+            <div class="search-box">
+              <form>
+                <input class="search-txt" type="text" placeholder="검색어를 입력해 주세요">
+                <button class="search-btn" >찾기</button>
+                <ol id="userList"></ol>
+              </form>
+            </div>
+          </div>
+        </section>
+        <footer>
+
+        </footer>
+        <script src="main.js"></script>
+</body>
+
+</html>
